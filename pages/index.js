@@ -65,6 +65,11 @@ const Object = ({ color, setColor }) => {
         <meshStandardMaterial />
       </mesh>
 
+      <mesh>
+        <sphereGeometry arg={[1, 32, 16]} />
+        <meshStandardMaterial />
+      </mesh>
+
       <mesh castShadow>
         <boxGeometry />
         {color == false &&
@@ -136,8 +141,6 @@ export default function Home() {
               <meshBasicMaterial color={"white"} side={THREE.BackSide} />
             </mesh>
           </Environment>
-
-
         </Canvas>
       </main>
     </>
